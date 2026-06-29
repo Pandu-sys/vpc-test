@@ -1,5 +1,6 @@
 module "vpc" {
-    source = "../terraform-aws-vpc"
+    # source = "../terraform-aws-vpc"
+    source = "git::https://github.com/Pandu-sys/terraform-aws-vpc.git?ref=main"
     project = var.project
     environment = var.environment
     is_peering_required = true
